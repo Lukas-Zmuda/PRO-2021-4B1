@@ -19,17 +19,7 @@ public class Vstup {
 		
 		System.out.println(meno + ", ty mas uz " + (2021 - rokNarodenia) + " rokov.");
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+				
 		
 	}
 
