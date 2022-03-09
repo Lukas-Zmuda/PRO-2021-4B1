@@ -17,11 +17,19 @@ public class Tester {
 		s1.vek = 22;
 		s1.pohlavie = 'm';
 		
+		s2.meno = "Fero";
+		s2.priezvisko = "Mravec";
+		s2.vek = 15;
+		s2.pohlavie = 'n';
+		
 		System.out.println("Janko Hrasko ma " + s1.vek + " rokov");
 		
 		//vytvorte dalsie 2 objekty triedy Student a naplnte ich hodnotami
 		
+		System.out.println("Cele meno: " + s1.celeMeno());
 		
+		s1.info();
+		s2.info();
 		
 
 	}
