@@ -12,6 +12,8 @@ public class Tester {
 		
 		Student s2 = new Student();
 		
+		s1.info();
+		
 		s1.meno = "Janko";
 		s1.priezvisko = "Hrasko";
 		s1.vek = 22;
@@ -30,6 +32,9 @@ public class Tester {
 		
 		s1.info();
 		s2.info();
+		
+		Student s3 = new Student("Ivan", "Maturant", 19, 'm');
+		s3.info();
 		
 
 	}

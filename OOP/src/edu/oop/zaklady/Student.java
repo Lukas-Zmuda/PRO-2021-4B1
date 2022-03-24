@@ -9,6 +9,23 @@ public class Student {
 	int vek;
 	char pohlavie;
 	
+	//konstruktor
+	Student(){
+		meno = "nezname";
+		priezvisko = "nezname";
+		vek = 5;
+		pohlavie = 'n';
+		System.out.println("Volany konstruktor bez parametra");
+	}
+	
+	Student(String m, String p, int v, char pp){
+		meno = m;
+		priezvisko = p;
+		vek = v;
+		pohlavie = pp;
+		System.out.println("Volany konstruktor s parametrami");
+	}
+	
 	//metody
 	//schopnosti objektu
 	
@@ -24,7 +41,7 @@ public class Student {
 	}
 	
 	boolean plnolety() {
-		//TODO
+		return vek > 17;
 	}
 	
 	
