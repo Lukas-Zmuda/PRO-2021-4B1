@@ -6,11 +6,11 @@ public class Student {
 	//vlastnosti objektu
 	String meno;
 	String priezvisko;
-	int vek;
+	private int vek;
 	char pohlavie;
 	
 	//konstruktor
-	Student(){
+	public Student(){
 		meno = "nezname";
 		priezvisko = "nezname";
 		vek = 5;
@@ -18,11 +18,12 @@ public class Student {
 		System.out.println("Volany konstruktor bez parametra");
 	}
 	
-	Student(String m, String p, int v, char pp){
-		meno = m;
-		priezvisko = p;
-		vek = v;
-		pohlavie = pp;
+	Student(String meno, String priezvisko, int vek, char pohlavie){
+		
+		this.meno = meno;
+		this.priezvisko = priezvisko;
+		this.vek = vek;
+		this.pohlavie = pohlavie;
 		System.out.println("Volany konstruktor s parametrami");
 	}
 	
@@ -34,7 +35,7 @@ public class Student {
 	}
 	
 	
-	void info() {
+	public void info() {
 		System.out.println("Meno a priezvisko: " + celeMeno());
 		System.out.println("Vek: " + vek);
 		System.out.println("Pohlavie: " + pohlavie);
@@ -44,6 +45,18 @@ public class Student {
 		return vek > 17;
 	}
 	
+	int getVek(){
+		return this.vek;
+	}
+	
+	
+	void setVek(int vek) {
+		if(vek >0 ) {
+			this.vek = vek;			
+		}else {
+			this.vek = 5;
+		}
+	}
 	
 	
 	

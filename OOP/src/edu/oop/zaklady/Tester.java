@@ -16,15 +16,15 @@ public class Tester {
 		
 		s1.meno = "Janko";
 		s1.priezvisko = "Hrasko";
-		s1.vek = 22;
+		s1.setVek(22);
 		s1.pohlavie = 'm';
 		
 		s2.meno = "Fero";
 		s2.priezvisko = "Mravec";
-		s2.vek = 15;
+		s2.setVek(15);
 		s2.pohlavie = 'n';
 		
-		System.out.println("Janko Hrasko ma " + s1.vek + " rokov");
+		System.out.println("Janko Hrasko ma " + s1.getVek() + " rokov");
 		
 		//vytvorte dalsie 2 objekty triedy Student a naplnte ich hodnotami
 		
@@ -34,6 +34,9 @@ public class Tester {
 		s2.info();
 		
 		Student s3 = new Student("Ivan", "Maturant", 19, 'm');
+		s3.info();
+		
+		s3.setVek(-258);
 		s3.info();
 		
 
